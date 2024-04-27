@@ -69,5 +69,15 @@ namespace Ejercicio_4.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logotipo_vertical_azul1 {
+            get {
+                object obj = ResourceManager.GetObject("Logotipo-vertical-azul1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
