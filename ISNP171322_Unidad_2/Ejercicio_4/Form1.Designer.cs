@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUnitario = new System.Windows.Forms.TextBox();
-            this.txtCant = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtCant = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,13 +79,6 @@
             this.txtUnitario.Name = "txtUnitario";
             this.txtUnitario.Size = new System.Drawing.Size(100, 20);
             this.txtUnitario.TabIndex = 2;
-            // 
-            // txtCant
-            // 
-            this.txtCant.Location = new System.Drawing.Point(203, 172);
-            this.txtCant.Name = "txtCant";
-            this.txtCant.Size = new System.Drawing.Size(49, 20);
-            this.txtCant.TabIndex = 3;
             // 
             // label3
             // 
@@ -219,6 +212,14 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // txtCant
+            // 
+            this.txtCant.Location = new System.Drawing.Point(203, 172);
+            this.txtCant.Name = "txtCant";
+            this.txtCant.Size = new System.Drawing.Size(49, 20);
+            this.txtCant.TabIndex = 3;
+            this.txtCant.TextChanged += new System.EventHandler(this.txtCant_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,7 +256,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUnitario;
-        private System.Windows.Forms.TextBox txtCant;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -269,6 +269,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtCant;
     }
 }
 

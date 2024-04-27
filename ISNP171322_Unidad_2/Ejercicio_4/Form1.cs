@@ -30,15 +30,16 @@ namespace Ejercicio_4
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Detener la ejecución del método por dejar campos vacios
             }
-
+            
             double Uni = double.Parse(txtUnitario.Text);
-            double Cant = double.Parse(txtCant.Text);
+            int Cant = int.Parse(txtCant.Text);
+
             if (Uni == 0 || Cant == 0)
             {
                 MessageBox.Show("No se puede calcular con cero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-                        
+
             // Obtener el valor unitario ingresado por el usuario
             decimal vUnitario = decimal.Parse(txtUnitario.Text);
 
@@ -53,10 +54,6 @@ namespace Ejercicio_4
 
             // Calcular el total a pagar con descuento
             decimal totalConDescu = totalSinDescu - descuento;
-
-            // Formatear el resultado con separador de miles y punto decimal
-            // totalFormateado = totalConDescu.ToString("#,##0.00");
-
 
             // Mostrar el resultado en la etiqueta correspondiente separando por coma los miles
             txtTotalP.Text = "" + totalConDescu.ToString("#,##0.00");
@@ -131,6 +128,16 @@ namespace Ejercicio_4
             lblTime.Text = $"Hora: {horaActual.ToString("hh:mm:ss")} " + formattedTime;
         }
 
-       
+        private void txtCant_TextChanged(object sender, EventArgs e)
+        {
+            // Verificar si el contenido del campo txtCant es un número entero
+            if (!int.TryParse(txtCant.Text, out int cantidad))
+            {
+                // Mostrar mensaje de error si no es un número entero y eliminar el último carácter ingresado
+                MessageBox.Show("Solo se pueden ingresar valores enteros en el campo de cantidad.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCant.Text = txtCant.Text.Substring(0, txtCant.Text.Length - 1); // Eliminar el último carácter ingresado
+                txtCant.SelectionStart = txtCant.Text.Length; // Colocar el cursor al final del texto
+            }
+        }
     }
 }
