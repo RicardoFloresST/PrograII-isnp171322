@@ -17,17 +17,18 @@ namespace Ejercicio_4
         {
             InitializeComponent();
             Timer timer = new Timer();
-            timer.Interval = 1000; // 1 segundo
+            timer.Interval = 1000; // Esto es Igual a 1 segundo
             timer.Tick += timer1_Tick;
             timer.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Verificar si los campos  de entrada están en blanco
             if (string.IsNullOrWhiteSpace(txtUnitario.Text) || string.IsNullOrWhiteSpace(txtCant.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Detener la ejecución del método
+                return; // Detener la ejecución del método por dejar campos vacios
             }
 
             double Uni = double.Parse(txtUnitario.Text);
@@ -37,8 +38,7 @@ namespace Ejercicio_4
                 MessageBox.Show("No se puede calcular con cero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            // Verificar si los campos están en blanco
-            
+                        
             // Obtener el valor unitario ingresado por el usuario
             decimal vUnitario = decimal.Parse(txtUnitario.Text);
 
@@ -58,10 +58,10 @@ namespace Ejercicio_4
             // totalFormateado = totalConDescu.ToString("#,##0.00");
 
 
-            // Mostrar el resultado en la etiqueta correspondiente
+            // Mostrar el resultado en la etiqueta correspondiente separando por coma los miles
             txtTotalP.Text = "" + totalConDescu.ToString("#,##0.00");
 
-            // Bloquear el campo de texto del monto a pagar
+            // Bloquear el campo de texto del monto a pagar para no modificar el valor final
             txtDescuento.ReadOnly = true;
             txtTotalP.ReadOnly = true;
         }
@@ -90,7 +90,7 @@ namespace Ejercicio_4
         }
          
 
-        // Método para calcular el total a pagar
+        // Método para calcular el total a pagar ya aplicando el respectivo descuento
         private decimal CalcularTotalPagar(decimal totalSinDescuento, decimal descuento)
         {
             return totalSinDescuento - descuento;
@@ -107,6 +107,7 @@ namespace Ejercicio_4
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Este metodo sirve para cerrar la aplicación
             Application.Exit();
         }
 
