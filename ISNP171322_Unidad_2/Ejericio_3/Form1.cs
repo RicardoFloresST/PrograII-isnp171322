@@ -150,7 +150,7 @@ namespace Ejericio_3
             string formattedTime = currentDateTime.ToString("tt");
             // Obtener la hora actual sincronizada
             DateTime horaActual = DateTime.Now;
-            lblTime.Text = $"Hora: {horaActual.ToString("hh:mm:ss")}"+ formattedTime;
+            lblTime.Text = $"Hora: {horaActual.ToString("hh:mm:ss")} "+ formattedTime;
         }
 
         private void button1_Click(object sender, EventArgs e)
