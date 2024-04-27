@@ -1,0 +1,14 @@
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.exe.config
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.exe
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.pdb
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.AssemblyReference.cache
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.exe
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.pdb
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.exe.config
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.exe
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\bin\Debug\Ejercicio_1.pdb
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.AssemblyReference.cache
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.exe
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_1\obj\Debug\Ejercicio_1.pdb
