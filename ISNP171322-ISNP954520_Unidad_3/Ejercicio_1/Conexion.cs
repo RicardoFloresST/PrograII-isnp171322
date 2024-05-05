@@ -50,14 +50,15 @@ namespace Ejercicio_1
             {
                 if (accion == "Nuevo Registro")
                 {
-                    sql = "INSERT INTO Estudiantes (Codigo, NombreCompleto, Edad, Sexo, NotaLab1, NotaLab2, NotaParcial, Promedio) VALUES ('" + Estudiantes[1] + "', '" + Estudiantes[2] + "', '" + Estudiantes[3] + "', '" + Estudiantes[4] + "', '" + Estudiantes[5] + "', '" + Estudiantes[6] + "', '" + Estudiantes[7] + "', '" + Estudiantes[8] + "')";
+                    sql = "INSERT INTO Estudiantes (Codigo, NombreCompleto, Edad, Sexo, NotaLab1, NotaLab2, NotaParcial, Promedio, Estado) VALUES ('" + Estudiantes[1] + "', '" + Estudiantes[2] + "'," +
+                        " '" + Estudiantes[3] + "', '" + Estudiantes[4] + "', '" + Estudiantes[5] + "', '" + Estudiantes[6] + "', '" + Estudiantes[7] + "', '" + Estudiantes[8] + "', '" + Estudiantes[9] + "')";
                 }
                 else if (accion == "Editar Registro")
                 {
-                    sql = "UPDATE Estudiantes SET Codigo = '" + Estudiantes[1] + "'," + " NombreCompleto = '" + Estudiantes[2] + "'," + " Edad = "
-                     + Estudiantes[3] + "," + " Sexo = '" + Estudiantes[4] + "'," + " NotaLab1 = " + Estudiantes[5] + "," + " NotaLab2 = '"
-                     + Estudiantes[6] + "'," + " NotaParcial = " + Estudiantes[7] + "," + " Promedio = '" + Estudiantes[8] +
-                      "' WHERE IdEstudiante = '" + Estudiantes[0] + "'";
+                    sql = "UPDATE Estudiantes SET Codigo = '" + Estudiantes[1] + "', NombreCompleto = '" + Estudiantes[2] + "', Edad = "
+                    + Estudiantes[3] + ", Sexo = '" + Estudiantes[4] + "', NotaLab1 = " + Estudiantes[5] + ", NotaLab2 = '"
+                    + Estudiantes[6] + "', NotaParcial = " + Estudiantes[7] + ", Promedio = '" + Estudiantes[8] + "', Estado = '" + Estudiantes[9] +
+                    "' WHERE IdEstudiante = '" + Estudiantes[0] + "'";
                 }
                 else if (accion == "Eliminar Registro")
                 {

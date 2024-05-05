@@ -46,17 +46,18 @@ namespace Ejercicio_1
                 txtLab2.Text = dt.Rows[posicion][6].ToString();
                 txtParcial.Text = dt.Rows[posicion][7].ToString();
                 txtPromedio.Text = dt.Rows[posicion][8].ToString();
+                txtEstado.Text = dt.Rows[posicion][9].ToString();
                 txtPorcent30_1.Text = "30";
                 txtPorcent30_2.Text = "30";
                 txtPorcent40.Text = "40";
                 txtMate.Text = "Programación II";
                 txtYear.Text = "2024";
 
-                lblNResgistroAlumno.Text = (posicion + 1) + " de " + dt.Rows.Count.ToString();
+                lblNResgistroEstudiantes.Text = (posicion + 1) + " de " + dt.Rows.Count.ToString();
             }
             else
             {
-                lblNResgistroAlumno.Text = "0 de 0";
+                lblNResgistroEstudiantes.Text = "0 de 0";
                 limpiarCajas();
             }
         }
@@ -71,12 +72,14 @@ namespace Ejercicio_1
             txtLab2.Text = "";
             txtParcial.Text = "";
             txtPromedio.Text = "";
+            txtEstado.Text = "";
         }
 
 
         private void PromedioEstudiante_Load(object sender, EventArgs e)
         {
             actualizarDsEstudiantes();
+            grdDatosEstudiantes.DataSource = dt.DefaultView;
 
         }
 
@@ -104,6 +107,9 @@ namespace Ejercicio_1
 
             // Mostrar el promedio en el campo de texto
             txtPromedio.Text = promedio.ToString();
+            // Determinar si el estudiante aprobó o reprobó
+            string estado = (promedio >= 6.0) ? "Aprobado" : "Reprobado";
+            txtEstado.Text = estado;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -111,6 +117,7 @@ namespace Ejercicio_1
             if (posicion < dt.Rows.Count - 1)
             {
                 posicion++;
+                Console.WriteLine(txtNombres.Text); // Agregar aquí
                 mostrarDatosEstudiantes();
             }
             else
@@ -124,6 +131,7 @@ namespace Ejercicio_1
             if (posicion > 0)
             {
                 posicion--;
+                Console.WriteLine(txtNombres.Text); // Agregar aquí
                 mostrarDatosEstudiantes();
             }
             else
@@ -154,31 +162,42 @@ namespace Ejercicio_1
                 }
                 else
                 {//Guardando un nuevo Estudiante
-                    String[] Estudiantes = new String[] {
-            dt.Rows[posicion].ItemArray[0].ToString(),// IdEstudiante
-            txtCodigo.Text,
-            txtNombres.Text,
-            txtEdad.Text,
-            txtSexo.Text,
-            txtLab1.Text,
-            txtLab2.Text,
-            txtParcial.Text,
-            txtPromedio.Text
-                   };
-
-                    String Resp = objConexion.administrarEstudiantes(Estudiantes, accion);
-                    if (Resp != "1")
+                    if (dt.Rows.Count > 0 && posicion < dt.Rows.Count)
                     {
-                        MessageBox.Show("Error al intentar guardar el registro: " + Resp, "Edición de Estudiantes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        String[] Estudiantes = new String[] {
+                         dt.Rows[posicion].ItemArray[0].ToString(), // IdEstudiante
+                         txtCodigo.Text,
+                         txtNombres.Text,
+                         txtEdad.Text,
+                         txtSexo.Text,
+                         txtLab1.Text,
+                         txtLab2.Text,
+                         txtParcial.Text,
+                         txtPromedio.Text,
+                         txtEstado.Text
+                        };
+                        String Resp = objConexion.administrarEstudiantes(Estudiantes, accion);
+                        if (Resp != "1")
+                        {
+                            MessageBox.Show("Error al intentar guardar el registro: " + Resp, "Edición de Estudiantes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            actualizarDsEstudiantes();
+                            mostrarDatosEstudiantes();
+                            activarDesactivarControles(true);
+                            btnAgregar.Text = "Agregar";
+                            btnEditar.Text = "Editar";
+                        }
+
+                        // Resto del código que maneja los datos del estudiante...
                     }
                     else
                     {
-                        actualizarDsEstudiantes();
-                        mostrarDatosEstudiantes();
-                        activarDesactivarControles(true);
-                        btnAgregar.Text = "Agregar";
-                        btnEditar.Text = "Editar";
+                        MessageBox.Show("No hay estudiantes disponibles para realizar esta operación.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     }
+
                 }
 
             }
@@ -221,7 +240,7 @@ namespace Ejercicio_1
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             // Preguntar al usuario si está seguro de eliminar al estudiante
-            DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar este estudiante?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar a " + txtNombres.Text + "?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             // Verificar la respuesta del usuario
             if (result == DialogResult.Yes)
@@ -230,16 +249,35 @@ namespace Ejercicio_1
                 String Resp = objConexion.administrarEstudiantes(new String[] {
             dt.Rows[posicion].ItemArray[0].ToString()
         }, "Eliminar Registro");
-                actualizarDsEstudiantes();
-            } else {
-                // Si el usuario cancela la eliminación, no hacer nada
-                // Puedes agregar alguna lógica adicional aquí si es necesario
+
+                // Mostrar un mensaje de éxito si la eliminación fue exitosa
+                if (Resp == "1")
+                {
+                    MessageBox.Show(txtNombres.Text + " ha sido eliminado exitosamente.", "Eliminación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    actualizarDsEstudiantes();
+                }
+                else
+                {
+                    MessageBox.Show("Error al intentar eliminar el estudiante: " + Resp, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            else
+            {
+                // Si el usuario cancela la eliminación, mostrar un mensaje de que no se realizó la eliminación
+                MessageBox.Show(txtNombres.Text + " no ha sido borrado.", "Eliminación cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txtBuscarEstudiante_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void filtrarDatosEstudiantes() {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = grdDatosEstudiantes.DataSource;
+            bs.Filter = "Codigo like '%" + txtBuscarEstudiante.Text + "%'";
         }
     }
 }
-
-
-
 
 
