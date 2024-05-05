@@ -270,12 +270,13 @@ namespace Ejercicio_1
 
         private void txtBuscarEstudiante_TextChanged(object sender, EventArgs e)
         {
-
+            filtrarDatosEstudiantes(txtBuscarEstudiante.Text);
         }
-        private void filtrarDatosEstudiantes() {
+        private void filtrarDatosEstudiantes(String valor) {
             BindingSource bs = new BindingSource();
             bs.DataSource = grdDatosEstudiantes.DataSource;
-            bs.Filter = "Codigo like '%" + txtBuscarEstudiante.Text + "%'";
+            bs.Filter = "Codigo like '%" + valor + "%' OR NombreCompleto like '%" + valor + "%' ";
+            grdDatosEstudiantes.DataSource = bs;
         }
     }
 }
