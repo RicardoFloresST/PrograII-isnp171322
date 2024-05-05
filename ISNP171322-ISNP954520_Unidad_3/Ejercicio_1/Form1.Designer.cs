@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbNavegacion = new System.Windows.Forms.GroupBox();
+            this.lblNResgistroAlumno = new System.Windows.Forms.Label();
+            this.grbEditarControl = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtMate = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtPorcent30_2 = new System.Windows.Forms.TextBox();
             this.txtPorcent40 = new System.Windows.Forms.TextBox();
             this.txtPorcent30_1 = new System.Windows.Forms.TextBox();
@@ -62,40 +64,52 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblNResgistroAlumno = new System.Windows.Forms.Label();
+            this.grbFichaEstudiante = new System.Windows.Forms.GroupBox();
             this.btnNext = new Ejercicio_1.BotonCircular();
             this.btnBack = new Ejercicio_1.BotonCircular();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnCalcuPromedio = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grbNavegacion.SuspendLayout();
+            this.grbEditarControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.grbFichaEstudiante.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox2
+            // grbNavegacion
             // 
-            this.groupBox2.Controls.Add(this.lblNResgistroAlumno);
-            this.groupBox2.Controls.Add(this.btnNext);
-            this.groupBox2.Controls.Add(this.btnBack);
-            this.groupBox2.Location = new System.Drawing.Point(54, 372);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 100);
-            this.groupBox2.TabIndex = 73;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Navegación";
+            this.grbNavegacion.Controls.Add(this.lblNResgistroAlumno);
+            this.grbNavegacion.Controls.Add(this.btnNext);
+            this.grbNavegacion.Controls.Add(this.btnBack);
+            this.grbNavegacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbNavegacion.Location = new System.Drawing.Point(54, 372);
+            this.grbNavegacion.Name = "grbNavegacion";
+            this.grbNavegacion.Size = new System.Drawing.Size(377, 100);
+            this.grbNavegacion.TabIndex = 73;
+            this.grbNavegacion.TabStop = false;
+            this.grbNavegacion.Text = "Navegación";
             // 
-            // groupBox1
+            // lblNResgistroAlumno
             // 
-            this.groupBox1.Controls.Add(this.btnEliminar);
-            this.groupBox1.Controls.Add(this.btnAgregar);
-            this.groupBox1.Controls.Add(this.btnEditar);
-            this.groupBox1.Location = new System.Drawing.Point(659, 372);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 100);
-            this.groupBox1.TabIndex = 72;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Edición";
+            this.lblNResgistroAlumno.AutoSize = true;
+            this.lblNResgistroAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNResgistroAlumno.Location = new System.Drawing.Point(159, 44);
+            this.lblNResgistroAlumno.Name = "lblNResgistroAlumno";
+            this.lblNResgistroAlumno.Size = new System.Drawing.Size(53, 18);
+            this.lblNResgistroAlumno.TabIndex = 74;
+            this.lblNResgistroAlumno.Text = "x de n";
+            // 
+            // grbEditarControl
+            // 
+            this.grbEditarControl.Controls.Add(this.btnEliminar);
+            this.grbEditarControl.Controls.Add(this.btnAgregar);
+            this.grbEditarControl.Controls.Add(this.btnEditar);
+            this.grbEditarControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbEditarControl.Location = new System.Drawing.Point(659, 372);
+            this.grbEditarControl.Name = "grbEditarControl";
+            this.grbEditarControl.Size = new System.Drawing.Size(377, 100);
+            this.grbEditarControl.TabIndex = 72;
+            this.grbEditarControl.TabStop = false;
+            this.grbEditarControl.Text = "Edición";
             // 
             // btnEliminar
             // 
@@ -129,9 +143,8 @@
             // txtSexo
             // 
             this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSexo.Location = new System.Drawing.Point(166, 303);
+            this.txtSexo.Location = new System.Drawing.Point(154, 153);
             this.txtSexo.Name = "txtSexo";
-            this.txtSexo.ReadOnly = true;
             this.txtSexo.Size = new System.Drawing.Size(100, 21);
             this.txtSexo.TabIndex = 71;
             // 
@@ -158,7 +171,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(110, 306);
+            this.label13.Location = new System.Drawing.Point(98, 156);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 15);
             this.label13.TabIndex = 68;
@@ -248,10 +261,19 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Materia";
             // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox5.Location = new System.Drawing.Point(0, 3);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(155, 184);
+            this.textBox5.TabIndex = 74;
+            // 
             // txtPorcent30_2
             // 
             this.txtPorcent30_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent30_2.Location = new System.Drawing.Point(826, 213);
+            this.txtPorcent30_2.Location = new System.Drawing.Point(840, 77);
             this.txtPorcent30_2.Name = "txtPorcent30_2";
             this.txtPorcent30_2.ReadOnly = true;
             this.txtPorcent30_2.Size = new System.Drawing.Size(53, 21);
@@ -261,7 +283,7 @@
             // txtPorcent40
             // 
             this.txtPorcent40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent40.Location = new System.Drawing.Point(826, 255);
+            this.txtPorcent40.Location = new System.Drawing.Point(840, 119);
             this.txtPorcent40.Name = "txtPorcent40";
             this.txtPorcent40.ReadOnly = true;
             this.txtPorcent40.Size = new System.Drawing.Size(53, 21);
@@ -271,7 +293,7 @@
             // txtPorcent30_1
             // 
             this.txtPorcent30_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent30_1.Location = new System.Drawing.Point(826, 173);
+            this.txtPorcent30_1.Location = new System.Drawing.Point(840, 37);
             this.txtPorcent30_1.Name = "txtPorcent30_1";
             this.txtPorcent30_1.ReadOnly = true;
             this.txtPorcent30_1.Size = new System.Drawing.Size(53, 21);
@@ -281,9 +303,8 @@
             // txtLab2
             // 
             this.txtLab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLab2.Location = new System.Drawing.Point(723, 213);
+            this.txtLab2.Location = new System.Drawing.Point(742, 77);
             this.txtLab2.Name = "txtLab2";
-            this.txtLab2.ReadOnly = true;
             this.txtLab2.Size = new System.Drawing.Size(53, 21);
             this.txtLab2.TabIndex = 63;
             this.txtLab2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -291,9 +312,8 @@
             // txtParcial
             // 
             this.txtParcial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParcial.Location = new System.Drawing.Point(723, 255);
+            this.txtParcial.Location = new System.Drawing.Point(742, 119);
             this.txtParcial.Name = "txtParcial";
-            this.txtParcial.ReadOnly = true;
             this.txtParcial.Size = new System.Drawing.Size(53, 21);
             this.txtParcial.TabIndex = 62;
             this.txtParcial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -301,9 +321,8 @@
             // txtLab1
             // 
             this.txtLab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLab1.Location = new System.Drawing.Point(723, 173);
+            this.txtLab1.Location = new System.Drawing.Point(742, 37);
             this.txtLab1.Name = "txtLab1";
-            this.txtLab1.ReadOnly = true;
             this.txtLab1.Size = new System.Drawing.Size(53, 21);
             this.txtLab1.TabIndex = 61;
             this.txtLab1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -311,27 +330,24 @@
             // txtNombres
             // 
             this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(166, 213);
+            this.txtNombres.Location = new System.Drawing.Point(154, 63);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(342, 21);
             this.txtNombres.TabIndex = 60;
             // 
             // txtEdad
             // 
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.Location = new System.Drawing.Point(166, 259);
+            this.txtEdad.Location = new System.Drawing.Point(154, 109);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.ReadOnly = true;
             this.txtEdad.Size = new System.Drawing.Size(47, 21);
             this.txtEdad.TabIndex = 59;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(166, 173);
+            this.txtCodigo.Location = new System.Drawing.Point(154, 23);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 21);
             this.txtCodigo.TabIndex = 58;
             // 
@@ -339,7 +355,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(586, 176);
+            this.label12.Location = new System.Drawing.Point(605, 40);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(131, 15);
             this.label12.TabIndex = 57;
@@ -349,7 +365,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 213);
+            this.label11.Location = new System.Drawing.Point(14, 63);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 15);
             this.label11.TabIndex = 56;
@@ -359,7 +375,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(97, 176);
+            this.label10.Location = new System.Drawing.Point(85, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 15);
             this.label10.TabIndex = 55;
@@ -369,7 +385,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(797, 176);
+            this.label7.Location = new System.Drawing.Point(811, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 15);
             this.label7.TabIndex = 54;
@@ -379,7 +395,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(797, 216);
+            this.label6.Location = new System.Drawing.Point(811, 80);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 15);
             this.label6.TabIndex = 53;
@@ -389,7 +405,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(797, 262);
+            this.label5.Location = new System.Drawing.Point(811, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 15);
             this.label5.TabIndex = 52;
@@ -399,7 +415,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(586, 216);
+            this.label4.Location = new System.Drawing.Point(605, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 15);
             this.label4.TabIndex = 51;
@@ -409,7 +425,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(627, 262);
+            this.label3.Location = new System.Drawing.Point(646, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 15);
             this.label3.TabIndex = 50;
@@ -419,21 +435,41 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(109, 262);
+            this.label2.Location = new System.Drawing.Point(97, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 49;
             this.label2.Text = "Edad:";
             // 
-            // lblNResgistroAlumno
+            // grbFichaEstudiante
             // 
-            this.lblNResgistroAlumno.AutoSize = true;
-            this.lblNResgistroAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNResgistroAlumno.Location = new System.Drawing.Point(168, 46);
-            this.lblNResgistroAlumno.Name = "lblNResgistroAlumno";
-            this.lblNResgistroAlumno.Size = new System.Drawing.Size(46, 15);
-            this.lblNResgistroAlumno.TabIndex = 74;
-            this.lblNResgistroAlumno.Text = "x de n";
+            this.grbFichaEstudiante.Controls.Add(this.txtCodigo);
+            this.grbFichaEstudiante.Controls.Add(this.label2);
+            this.grbFichaEstudiante.Controls.Add(this.label10);
+            this.grbFichaEstudiante.Controls.Add(this.label11);
+            this.grbFichaEstudiante.Controls.Add(this.txtSexo);
+            this.grbFichaEstudiante.Controls.Add(this.txtEdad);
+            this.grbFichaEstudiante.Controls.Add(this.txtNombres);
+            this.grbFichaEstudiante.Controls.Add(this.txtPorcent30_2);
+            this.grbFichaEstudiante.Controls.Add(this.txtPorcent40);
+            this.grbFichaEstudiante.Controls.Add(this.label13);
+            this.grbFichaEstudiante.Controls.Add(this.txtPorcent30_1);
+            this.grbFichaEstudiante.Controls.Add(this.txtLab1);
+            this.grbFichaEstudiante.Controls.Add(this.label7);
+            this.grbFichaEstudiante.Controls.Add(this.label3);
+            this.grbFichaEstudiante.Controls.Add(this.label6);
+            this.grbFichaEstudiante.Controls.Add(this.txtLab2);
+            this.grbFichaEstudiante.Controls.Add(this.label5);
+            this.grbFichaEstudiante.Controls.Add(this.label4);
+            this.grbFichaEstudiante.Controls.Add(this.txtParcial);
+            this.grbFichaEstudiante.Controls.Add(this.label12);
+            this.grbFichaEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbFichaEstudiante.Location = new System.Drawing.Point(0, 130);
+            this.grbFichaEstudiante.Name = "grbFichaEstudiante";
+            this.grbFichaEstudiante.Size = new System.Drawing.Size(915, 184);
+            this.grbFichaEstudiante.TabIndex = 74;
+            this.grbFichaEstudiante.TabStop = false;
+            this.grbFichaEstudiante.Text = "Ficha Estudiante";
             // 
             // btnNext
             // 
@@ -471,20 +507,12 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox5.Location = new System.Drawing.Point(0, 3);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 184);
-            this.textBox5.TabIndex = 74;
-            // 
             // btnCalcuPromedio
             // 
-            this.btnCalcuPromedio.Location = new System.Drawing.Point(733, 303);
+            this.btnCalcuPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcuPromedio.Location = new System.Drawing.Point(754, 318);
             this.btnCalcuPromedio.Name = "btnCalcuPromedio";
-            this.btnCalcuPromedio.Size = new System.Drawing.Size(130, 40);
+            this.btnCalcuPromedio.Size = new System.Drawing.Size(124, 27);
             this.btnCalcuPromedio.TabIndex = 15;
             this.btnCalcuPromedio.Text = "Calcular Promedio";
             this.btnCalcuPromedio.UseVisualStyleBackColor = true;
@@ -496,41 +524,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(1097, 505);
+            this.Controls.Add(this.grbFichaEstudiante);
             this.Controls.Add(this.btnCalcuPromedio);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtSexo);
+            this.Controls.Add(this.grbNavegacion);
+            this.Controls.Add(this.grbEditarControl);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtPorcent30_2);
-            this.Controls.Add(this.txtPorcent40);
-            this.Controls.Add(this.txtPorcent30_1);
-            this.Controls.Add(this.txtLab2);
-            this.Controls.Add(this.txtParcial);
-            this.Controls.Add(this.txtLab1);
-            this.Controls.Add(this.txtNombres);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Name = "PromedioEstudiante";
             this.Text = "Promedio Estudiantes";
             this.Load += new System.EventHandler(this.PromedioEstudiante_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.grbNavegacion.ResumeLayout(false);
+            this.grbNavegacion.PerformLayout();
+            this.grbEditarControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.grbFichaEstudiante.ResumeLayout(false);
+            this.grbFichaEstudiante.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,10 +549,10 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grbNavegacion;
         private BotonCircular btnNext;
         private BotonCircular btnBack;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbEditarControl;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
@@ -576,6 +587,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblNResgistroAlumno;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.GroupBox grbFichaEstudiante;
         private System.Windows.Forms.Button btnCalcuPromedio;
     }
 }

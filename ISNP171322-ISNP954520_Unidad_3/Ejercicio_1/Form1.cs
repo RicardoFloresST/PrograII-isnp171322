@@ -77,6 +77,13 @@ namespace Ejercicio_1
 
         private void btnCalcuPromedio_Click(object sender, EventArgs e)
         {
+            // Verificar si los campos de notas están vacíos
+            if (string.IsNullOrEmpty(txtLab1.Text) || string.IsNullOrEmpty(txtLab2.Text) || string.IsNullOrEmpty(txtParcial.Text))
+            {
+                MessageBox.Show("Por favor, llenar los campos notas Lab1, Lab2 y Parcial .", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             // Obtener las notas de los campos de texto
             double lab1 = Convert.ToDouble(txtLab1.Text);
             double lab2 = Convert.ToDouble(txtLab2.Text);
@@ -119,31 +126,83 @@ namespace Ejercicio_1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(btnAgregar.Text == "Agregar") {// Creando un nuevo registro
+
+
+            if (btnAgregar.Text == "Agregar")
+            { //Agregando un nuevo Estudiante
+                limpiarCajas();
                 btnAgregar.Text = "Guardar";
                 btnEditar.Text = "Cancelar";
-            }
-            else
-            { // Guardar datos
-                btnAgregar.Text = "agregar";
-                btnEditar.Text = "Editar";
-                limpiarCajas();
-            
+                activarDesactivarControles(false);
+                accion = "Nuevo Registro";
+
+            } else {// Verificar si los campos de notas están vacíos
+                if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(txtSexo.Text) || string.IsNullOrEmpty(txtLab1.Text) || string.IsNullOrEmpty(txtLab2.Text) || string.IsNullOrEmpty(txtParcial.Text) || string.IsNullOrEmpty(txtPromedio.Text))
+                {
+                    MessageBox.Show("Por favor, llene todos los campos y recuerde antes de guardar precionar el boton calcular promedio.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {//Guardando un nuevo Estudiante
+                    String[] Estudiantes = new String[] {
+            dt.Rows[posicion].ItemArray[0].ToString(),// IdEstudiante
+            txtCodigo.Text,
+            txtNombres.Text,
+            txtEdad.Text,
+            txtSexo.Text,
+            txtLab1.Text,
+            txtLab2.Text,
+            txtParcial.Text,
+            txtPromedio.Text
+                   };
+
+                    String Resp = objConexion.administrarEstudiantes(Estudiantes, accion);
+                    if (Resp != "1")
+                    {
+                        MessageBox.Show("Error al intentar guardar el registro: " + Resp, "Edición de Estudiantes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        actualizarDsEstudiantes();
+                        mostrarDatosEstudiantes();
+                        activarDesactivarControles(true);
+                        btnAgregar.Text = "Agregar";
+                        btnEditar.Text = "Editar";
+                    }
+                }
+
             }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (btnEditar.Text == "Editar") {// Modificando un registro
+            if (btnEditar.Text == "Editar") {
                 btnAgregar.Text = "Guardar";
                 btnEditar.Text = "Cancelar";
-            }
-            else
-            { // Cancelar
-                btnAgregar.Text = "agregar";
-                btnEditar.Text = "Editar";
+                activarDesactivarControles(false);
+                accion = "Editar Registro";
+
+            } else
+            {// Verificar si los campos de notas están vacíos
+                if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(txtSexo.Text) || string.IsNullOrEmpty(txtLab1.Text) || string.IsNullOrEmpty(txtLab2.Text) || string.IsNullOrEmpty(txtParcial.Text) || string.IsNullOrEmpty(txtPromedio.Text))
+                {
+                    MessageBox.Show("Por favor, llene todos los campos y recuerde antes de guardar precionar el boton calcular promedio.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                } //Guardando un nuevo Estudiante
+                else
+                { //Cancelar 
+                    mostrarDatosEstudiantes();
+                    activarDesactivarControles(true);
+                    btnAgregar.Text = "Agregar";
+                    btnEditar.Text = "Editar";
+                }
 
             }
+        }
+        private void activarDesactivarControles(Boolean estado) {
+            grbFichaEstudiante.Enabled = !estado;
+            grbNavegacion.Enabled = estado;
+            btnEliminar.Enabled = estado;
         }
     }
 }
