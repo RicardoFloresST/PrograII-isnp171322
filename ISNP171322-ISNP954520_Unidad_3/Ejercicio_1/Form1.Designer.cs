@@ -65,9 +65,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grbFichaEstudiante = new System.Windows.Forms.GroupBox();
+            this.btnCalcuPromedio = new System.Windows.Forms.Button();
             this.btnNext = new Ejercicio_1.BotonCircular();
             this.btnBack = new Ejercicio_1.BotonCircular();
-            this.btnCalcuPromedio = new System.Windows.Forms.Button();
             this.grbNavegacion.SuspendLayout();
             this.grbEditarControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -119,6 +119,7 @@
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
@@ -471,6 +472,17 @@
             this.grbFichaEstudiante.TabStop = false;
             this.grbFichaEstudiante.Text = "Ficha Estudiante";
             // 
+            // btnCalcuPromedio
+            // 
+            this.btnCalcuPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcuPromedio.Location = new System.Drawing.Point(754, 318);
+            this.btnCalcuPromedio.Name = "btnCalcuPromedio";
+            this.btnCalcuPromedio.Size = new System.Drawing.Size(124, 27);
+            this.btnCalcuPromedio.TabIndex = 15;
+            this.btnCalcuPromedio.Text = "Calcular Promedio";
+            this.btnCalcuPromedio.UseVisualStyleBackColor = true;
+            this.btnCalcuPromedio.Click += new System.EventHandler(this.btnCalcuPromedio_Click);
+            // 
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Transparent;
@@ -507,23 +519,12 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnCalcuPromedio
-            // 
-            this.btnCalcuPromedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcuPromedio.Location = new System.Drawing.Point(754, 318);
-            this.btnCalcuPromedio.Name = "btnCalcuPromedio";
-            this.btnCalcuPromedio.Size = new System.Drawing.Size(124, 27);
-            this.btnCalcuPromedio.TabIndex = 15;
-            this.btnCalcuPromedio.Text = "Calcular Promedio";
-            this.btnCalcuPromedio.UseVisualStyleBackColor = true;
-            this.btnCalcuPromedio.Click += new System.EventHandler(this.btnCalcuPromedio_Click);
-            // 
             // PromedioEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(1097, 505);
+            this.ClientSize = new System.Drawing.Size(1097, 834);
             this.Controls.Add(this.grbFichaEstudiante);
             this.Controls.Add(this.btnCalcuPromedio);
             this.Controls.Add(this.grbNavegacion);
