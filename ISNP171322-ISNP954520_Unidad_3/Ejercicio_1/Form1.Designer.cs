@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PromedioEstudiante));
             this.grbNavegacion = new System.Windows.Forms.GroupBox();
             this.lblNResgistroEstudiantes = new System.Windows.Forms.Label();
-            this.btnNext = new Ejercicio_1.BotonCircular();
-            this.btnBack = new Ejercicio_1.BotonCircular();
             this.grbEditarControl = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -84,6 +82,8 @@
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.txtBuscarEstudiante = new System.Windows.Forms.TextBox();
+            this.btnNext = new Ejercicio_1.BotonCircular();
+            this.btnBack = new Ejercicio_1.BotonCircular();
             this.grbNavegacion.SuspendLayout();
             this.grbEditarControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,42 +114,6 @@
             this.lblNResgistroEstudiantes.Size = new System.Drawing.Size(53, 18);
             this.lblNResgistroEstudiantes.TabIndex = 74;
             this.lblNResgistroEstudiantes.Text = "x de n";
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.Color.Transparent;
-            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
-            this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNext.Image = global::Ejercicio_1.Properties.Resources.next1;
-            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnNext.Location = new System.Drawing.Point(61, 26);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(59, 57);
-            this.btnNext.TabIndex = 49;
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBack.Image = global::Ejercicio_1.Properties.Resources._1back;
-            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnBack.Location = new System.Drawing.Point(256, 26);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(59, 57);
-            this.btnBack.TabIndex = 0;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // grbEditarControl
             // 
@@ -582,6 +546,7 @@
             this.grdDatosEstudiantes.ReadOnly = true;
             this.grdDatosEstudiantes.Size = new System.Drawing.Size(1193, 293);
             this.grdDatosEstudiantes.TabIndex = 75;
+            this.grdDatosEstudiantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosEstudiantes_CellClick);
             // 
             // IdEstudiante
             // 
@@ -678,6 +643,43 @@
             this.txtBuscarEstudiante.Size = new System.Drawing.Size(408, 21);
             this.txtBuscarEstudiante.TabIndex = 77;
             this.txtBuscarEstudiante.TextChanged += new System.EventHandler(this.txtBuscarEstudiante_TextChanged);
+            this.txtBuscarEstudiante.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarEstudiante_KeyUp);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.ForeColor = System.Drawing.Color.Transparent;
+            this.btnNext.Image = global::Ejercicio_1.Properties.Resources.next1;
+            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnNext.Location = new System.Drawing.Point(61, 26);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(59, 57);
+            this.btnNext.TabIndex = 49;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.Image = global::Ejercicio_1.Properties.Resources._1back;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBack.Location = new System.Drawing.Point(256, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(59, 57);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // PromedioEstudiante
             // 

@@ -278,6 +278,26 @@ namespace Ejercicio_1
             bs.Filter = "Codigo like '%" + valor + "%' OR NombreCompleto like '%" + valor + "%' ";
             grdDatosEstudiantes.DataSource = bs;
         }
+        private void seleccionarEstudiante() {
+            int _idEstudiante = int.Parse(grdDatosEstudiantes.CurrentRow.Cells["IdEstudiante"].Value.ToString());
+            posicion = dt.Rows.IndexOf(dt.Rows.Find(_idEstudiante));
+            mostrarDatosEstudiantes();
+        }
+
+        private void grdDatosEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            seleccionarEstudiante();
+
+        }
+
+        private void txtBuscarEstudiante_KeyUp(object sender, KeyEventArgs e)
+        {
+            filtrarDatosEstudiantes(txtBuscarEstudiante.Text);
+            if(e.KeyCode==Keys.Enter)
+            {
+                seleccionarEstudiante();
+            }
+        }
     }
 }
 
