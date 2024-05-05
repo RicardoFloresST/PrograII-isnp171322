@@ -1,6 +1,6 @@
 ﻿namespace Ejercicio_1
 {
-    partial class Form1
+    partial class PromedioEstudiante
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DgvNotaMayor = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.txtSexo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.DgvRegistrosEstudiantes = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPromedio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMate = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtPorcent30_2 = new System.Windows.Forms.TextBox();
             this.txtPorcent40 = new System.Windows.Forms.TextBox();
             this.txtPorcent30_1 = new System.Windows.Forms.TextBox();
@@ -51,9 +53,6 @@
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -63,115 +62,106 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.DgvAproyRepro = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.txtSexo = new System.Windows.Forms.TextBox();
-            this.DgvNotaMayor.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.lblNResgistroAlumno = new System.Windows.Forms.Label();
+            this.btnNext = new Ejercicio_1.BotonCircular();
+            this.btnBack = new Ejercicio_1.BotonCircular();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnCalcuPromedio = new System.Windows.Forms.Button();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegistrosEstudiantes)).BeginInit();
             this.panel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvAproyRepro)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // DgvNotaMayor
+            // groupBox2
             // 
-            this.DgvNotaMayor.Controls.Add(this.tabPage1);
-            this.DgvNotaMayor.Controls.Add(this.tabPage2);
-            this.DgvNotaMayor.Controls.Add(this.tabPage3);
-            this.DgvNotaMayor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvNotaMayor.Location = new System.Drawing.Point(0, 0);
-            this.DgvNotaMayor.Name = "DgvNotaMayor";
-            this.DgvNotaMayor.SelectedIndex = 0;
-            this.DgvNotaMayor.Size = new System.Drawing.Size(1097, 699);
-            this.DgvNotaMayor.TabIndex = 0;
+            this.groupBox2.Controls.Add(this.lblNResgistroAlumno);
+            this.groupBox2.Controls.Add(this.btnNext);
+            this.groupBox2.Controls.Add(this.btnBack);
+            this.groupBox2.Location = new System.Drawing.Point(54, 372);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(377, 100);
+            this.groupBox2.TabIndex = 73;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Navegación";
             // 
-            // tabPage1
+            // groupBox1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.DarkCyan;
-            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.txtSexo);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.DgvRegistrosEstudiantes);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.txtPorcent30_2);
-            this.tabPage1.Controls.Add(this.txtPorcent40);
-            this.tabPage1.Controls.Add(this.txtPorcent30_1);
-            this.tabPage1.Controls.Add(this.txtLab2);
-            this.tabPage1.Controls.Add(this.txtParcial);
-            this.tabPage1.Controls.Add(this.txtLab1);
-            this.tabPage1.Controls.Add(this.txtNombres);
-            this.tabPage1.Controls.Add(this.txtEdad);
-            this.tabPage1.Controls.Add(this.txtCodigo);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1089, 673);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Registros";
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Controls.Add(this.btnAgregar);
+            this.groupBox1.Controls.Add(this.btnEditar);
+            this.groupBox1.Location = new System.Drawing.Point(659, 372);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(377, 100);
+            this.groupBox1.TabIndex = 72;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Edición";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(244, 34);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 40);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(48, 34);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 40);
+            this.btnAgregar.TabIndex = 12;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(141, 34);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 40);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // txtSexo
+            // 
+            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSexo.Location = new System.Drawing.Point(166, 303);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.ReadOnly = true;
+            this.txtSexo.Size = new System.Drawing.Size(100, 21);
+            this.txtSexo.TabIndex = 71;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Cooper Std Black", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(16, 34);
+            this.label14.Location = new System.Drawing.Point(20, 51);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(488, 42);
-            this.label14.TabIndex = 45;
+            this.label14.TabIndex = 70;
             this.label14.Text = "Registros De Estudiantes";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Ejercicio_1.Properties.Resources.Logotipo_horizontal_blanco1;
-            this.pictureBox1.Location = new System.Drawing.Point(763, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(767, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(199, 79);
-            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
-            // 
-            // DgvRegistrosEstudiantes
-            // 
-            this.DgvRegistrosEstudiantes.BackgroundColor = System.Drawing.Color.DarkBlue;
-            this.DgvRegistrosEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRegistrosEstudiantes.Location = new System.Drawing.Point(0, 341);
-            this.DgvRegistrosEstudiantes.Name = "DgvRegistrosEstudiantes";
-            this.DgvRegistrosEstudiantes.Size = new System.Drawing.Size(1088, 330);
-            this.DgvRegistrosEstudiantes.TabIndex = 43;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(143, 289);
+            this.label13.Location = new System.Drawing.Point(110, 306);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 15);
-            this.label13.TabIndex = 40;
+            this.label13.TabIndex = 68;
             this.label13.Text = "Sexo:";
             // 
             // panel1
@@ -179,15 +169,15 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.txtPromedio);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtYear);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtMate);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Location = new System.Drawing.Point(917, 143);
+            this.panel1.Location = new System.Drawing.Point(921, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(155, 184);
-            this.panel1.TabIndex = 39;
+            this.panel1.TabIndex = 67;
             // 
             // txtPromedio
             // 
@@ -196,6 +186,7 @@
             this.txtPromedio.Location = new System.Drawing.Point(0, 27);
             this.txtPromedio.Multiline = true;
             this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.ReadOnly = true;
             this.txtPromedio.Size = new System.Drawing.Size(154, 59);
             this.txtPromedio.TabIndex = 36;
             this.txtPromedio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -203,29 +194,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.GhostWhite;
+            this.label1.BackColor = System.Drawing.SystemColors.Menu;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(36, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Aprobación";
+            this.label1.Text = "Promedio";
             // 
-            // textBox3
+            // txtYear
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(0, 157);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 27);
-            this.textBox3.TabIndex = 37;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtYear.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYear.Location = new System.Drawing.Point(0, 157);
+            this.txtYear.Multiline = true;
+            this.txtYear.Name = "txtYear";
+            this.txtYear.ReadOnly = true;
+            this.txtYear.Size = new System.Drawing.Size(154, 27);
+            this.txtYear.TabIndex = 37;
+            this.txtYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.GhostWhite;
+            this.label8.BackColor = System.Drawing.SystemColors.Menu;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(61, 141);
             this.label8.Name = "label8";
@@ -233,21 +225,22 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Año";
             // 
-            // textBox2
+            // txtMate
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(0, 109);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 31);
-            this.textBox2.TabIndex = 38;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMate.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMate.Location = new System.Drawing.Point(0, 109);
+            this.txtMate.Multiline = true;
+            this.txtMate.Name = "txtMate";
+            this.txtMate.ReadOnly = true;
+            this.txtMate.Size = new System.Drawing.Size(154, 31);
+            this.txtMate.TabIndex = 38;
+            this.txtMate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.GhostWhite;
+            this.label9.BackColor = System.Drawing.SystemColors.Menu;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(50, 89);
             this.label9.Name = "label9";
@@ -255,344 +248,314 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Materia";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(0, 0);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 184);
-            this.textBox5.TabIndex = 0;
-            // 
             // txtPorcent30_2
             // 
             this.txtPorcent30_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent30_2.Location = new System.Drawing.Point(822, 196);
+            this.txtPorcent30_2.Location = new System.Drawing.Point(826, 213);
             this.txtPorcent30_2.Name = "txtPorcent30_2";
+            this.txtPorcent30_2.ReadOnly = true;
             this.txtPorcent30_2.Size = new System.Drawing.Size(53, 21);
-            this.txtPorcent30_2.TabIndex = 35;
+            this.txtPorcent30_2.TabIndex = 66;
+            this.txtPorcent30_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPorcent40
             // 
             this.txtPorcent40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent40.Location = new System.Drawing.Point(822, 238);
+            this.txtPorcent40.Location = new System.Drawing.Point(826, 255);
             this.txtPorcent40.Name = "txtPorcent40";
+            this.txtPorcent40.ReadOnly = true;
             this.txtPorcent40.Size = new System.Drawing.Size(53, 21);
-            this.txtPorcent40.TabIndex = 34;
+            this.txtPorcent40.TabIndex = 65;
+            this.txtPorcent40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPorcent30_1
             // 
             this.txtPorcent30_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcent30_1.Location = new System.Drawing.Point(822, 156);
+            this.txtPorcent30_1.Location = new System.Drawing.Point(826, 173);
             this.txtPorcent30_1.Name = "txtPorcent30_1";
+            this.txtPorcent30_1.ReadOnly = true;
             this.txtPorcent30_1.Size = new System.Drawing.Size(53, 21);
-            this.txtPorcent30_1.TabIndex = 33;
+            this.txtPorcent30_1.TabIndex = 64;
+            this.txtPorcent30_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLab2
             // 
             this.txtLab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLab2.Location = new System.Drawing.Point(719, 196);
+            this.txtLab2.Location = new System.Drawing.Point(723, 213);
             this.txtLab2.Name = "txtLab2";
+            this.txtLab2.ReadOnly = true;
             this.txtLab2.Size = new System.Drawing.Size(53, 21);
-            this.txtLab2.TabIndex = 32;
+            this.txtLab2.TabIndex = 63;
+            this.txtLab2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtParcial
             // 
             this.txtParcial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParcial.Location = new System.Drawing.Point(719, 238);
+            this.txtParcial.Location = new System.Drawing.Point(723, 255);
             this.txtParcial.Name = "txtParcial";
+            this.txtParcial.ReadOnly = true;
             this.txtParcial.Size = new System.Drawing.Size(53, 21);
-            this.txtParcial.TabIndex = 31;
+            this.txtParcial.TabIndex = 62;
+            this.txtParcial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLab1
             // 
             this.txtLab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLab1.Location = new System.Drawing.Point(719, 156);
+            this.txtLab1.Location = new System.Drawing.Point(723, 173);
             this.txtLab1.Name = "txtLab1";
+            this.txtLab1.ReadOnly = true;
             this.txtLab1.Size = new System.Drawing.Size(53, 21);
-            this.txtLab1.TabIndex = 30;
+            this.txtLab1.TabIndex = 61;
+            this.txtLab1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombres
             // 
             this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(258, 196);
+            this.txtNombres.Location = new System.Drawing.Point(166, 213);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(318, 21);
-            this.txtNombres.TabIndex = 29;
+            this.txtNombres.ReadOnly = true;
+            this.txtNombres.Size = new System.Drawing.Size(342, 21);
+            this.txtNombres.TabIndex = 60;
             // 
             // txtEdad
             // 
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.Location = new System.Drawing.Point(195, 238);
+            this.txtEdad.Location = new System.Drawing.Point(166, 259);
             this.txtEdad.Name = "txtEdad";
+            this.txtEdad.ReadOnly = true;
             this.txtEdad.Size = new System.Drawing.Size(47, 21);
-            this.txtEdad.TabIndex = 28;
+            this.txtEdad.TabIndex = 59;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(195, 156);
+            this.txtCodigo.Location = new System.Drawing.Point(166, 173);
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 21);
-            this.txtCodigo.TabIndex = 15;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(23, 277);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 40);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(23, 210);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 40);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(23, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtCodigo.TabIndex = 58;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(582, 159);
+            this.label12.Location = new System.Drawing.Point(586, 176);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(131, 15);
-            this.label12.TabIndex = 11;
+            this.label12.TabIndex = 57;
             this.label12.Text = "Nota Laboratorio 1:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(122, 199);
+            this.label11.Location = new System.Drawing.Point(26, 213);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(134, 15);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Nombres Completo:";
+            this.label11.Size = new System.Drawing.Size(127, 15);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "Nombre Completo:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(131, 159);
+            this.label10.Location = new System.Drawing.Point(97, 176);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 15);
-            this.label10.TabIndex = 9;
+            this.label10.TabIndex = 55;
             this.label10.Text = "Código:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(793, 159);
+            this.label7.Location = new System.Drawing.Point(797, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 15);
-            this.label7.TabIndex = 6;
+            this.label7.TabIndex = 54;
             this.label7.Text = "%";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(793, 199);
+            this.label6.Location = new System.Drawing.Point(797, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 15);
-            this.label6.TabIndex = 5;
+            this.label6.TabIndex = 53;
             this.label6.Text = "%";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(793, 245);
+            this.label5.Location = new System.Drawing.Point(797, 262);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 15);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 52;
             this.label5.Text = "%";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(582, 199);
+            this.label4.Location = new System.Drawing.Point(586, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 15);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 51;
             this.label4.Text = "Nota Laboratorio 2:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(623, 245);
+            this.label3.Location = new System.Drawing.Point(627, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 15);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 50;
             this.label3.Text = "Nota Parcial:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(143, 245);
+            this.label2.Location = new System.Drawing.Point(109, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 15);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 49;
             this.label2.Text = "Edad:";
             // 
-            // tabPage2
+            // lblNResgistroAlumno
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Teal;
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.DgvAproyRepro);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1089, 673);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Estados";
+            this.lblNResgistroAlumno.AutoSize = true;
+            this.lblNResgistroAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNResgistroAlumno.Location = new System.Drawing.Point(168, 46);
+            this.lblNResgistroAlumno.Name = "lblNResgistroAlumno";
+            this.lblNResgistroAlumno.Size = new System.Drawing.Size(46, 15);
+            this.lblNResgistroAlumno.TabIndex = 74;
+            this.lblNResgistroAlumno.Text = "x de n";
             // 
-            // label15
+            // btnNext
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cooper Std Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(17, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(544, 32);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "Estudiantes aprobados y reprobados";
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.ForeColor = System.Drawing.Color.Transparent;
+            this.btnNext.Image = global::Ejercicio_1.Properties.Resources.next1;
+            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnNext.Location = new System.Drawing.Point(61, 26);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(59, 57);
+            this.btnNext.TabIndex = 49;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // pictureBox2
+            // btnBack
             // 
-            this.pictureBox2.Image = global::Ejercicio_1.Properties.Resources.Logotipo_horizontal_blanco1;
-            this.pictureBox2.Location = new System.Drawing.Point(755, 60);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(199, 79);
-            this.pictureBox2.TabIndex = 45;
-            this.pictureBox2.TabStop = false;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.Image = global::Ejercicio_1.Properties.Resources._1back;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBack.Location = new System.Drawing.Point(256, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(59, 57);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // DgvAproyRepro
+            // textBox5
             // 
-            this.DgvAproyRepro.BackgroundColor = System.Drawing.Color.DarkBlue;
-            this.DgvAproyRepro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvAproyRepro.Location = new System.Drawing.Point(3, 211);
-            this.DgvAproyRepro.Name = "DgvAproyRepro";
-            this.DgvAproyRepro.Size = new System.Drawing.Size(1090, 466);
-            this.DgvAproyRepro.TabIndex = 0;
+            this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox5.Location = new System.Drawing.Point(0, 3);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(155, 184);
+            this.textBox5.TabIndex = 74;
             // 
-            // tabPage3
+            // btnCalcuPromedio
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Teal;
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1089, 673);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Records";
+            this.btnCalcuPromedio.Location = new System.Drawing.Point(733, 303);
+            this.btnCalcuPromedio.Name = "btnCalcuPromedio";
+            this.btnCalcuPromedio.Size = new System.Drawing.Size(130, 40);
+            this.btnCalcuPromedio.TabIndex = 15;
+            this.btnCalcuPromedio.Text = "Calcular Promedio";
+            this.btnCalcuPromedio.UseVisualStyleBackColor = true;
+            this.btnCalcuPromedio.Click += new System.EventHandler(this.btnCalcuPromedio_Click);
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cooper Std Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(33, 66);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(421, 32);
-            this.label16.TabIndex = 47;
-            this.label16.Text = "Estudiantes con mayor nota";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Ejercicio_1.Properties.Resources.Logotipo_horizontal_blanco1;
-            this.pictureBox3.Location = new System.Drawing.Point(773, 34);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(199, 79);
-            this.pictureBox3.TabIndex = 45;
-            this.pictureBox3.TabStop = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.DarkBlue;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 205);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1089, 468);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // txtSexo
-            // 
-            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSexo.Location = new System.Drawing.Point(195, 286);
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(100, 21);
-            this.txtSexo.TabIndex = 46;
-            // 
-            // Form1
+            // PromedioEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(1097, 699);
-            this.Controls.Add(this.DgvNotaMayor);
-            this.Name = "Form1";
+            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.ClientSize = new System.Drawing.Size(1097, 505);
+            this.Controls.Add(this.btnCalcuPromedio);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtSexo);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtPorcent30_2);
+            this.Controls.Add(this.txtPorcent40);
+            this.Controls.Add(this.txtPorcent30_1);
+            this.Controls.Add(this.txtLab2);
+            this.Controls.Add(this.txtParcial);
+            this.Controls.Add(this.txtLab1);
+            this.Controls.Add(this.txtNombres);
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Name = "PromedioEstudiante";
             this.Text = "Promedio Estudiantes";
-            this.DgvNotaMayor.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.Load += new System.EventHandler(this.PromedioEstudiante_Load);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegistrosEstudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvAproyRepro)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl DgvNotaMayor;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private BotonCircular btnNext;
+        private BotonCircular btnBack;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtPromedio;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtYear;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtMate;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtPorcent30_2;
         private System.Windows.Forms.TextBox txtPorcent40;
         private System.Windows.Forms.TextBox txtPorcent30_1;
@@ -602,20 +565,18 @@
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNResgistroAlumno;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView DgvRegistrosEstudiantes;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView DgvAproyRepro;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.Button btnCalcuPromedio;
     }
 }
 

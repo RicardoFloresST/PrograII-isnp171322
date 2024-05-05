@@ -2,7 +2,6 @@ C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\bin\Debug\Ejercicio_1.exe
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\bin\Debug\Ejercicio_1.pdb
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.AssemblyReference.cache
-C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.Form1.resources
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.Properties.Resources.resources
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.GenerateResource.cache
 C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.CoreCompileInputs.cache
@@ -18,3 +17,6 @@ C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP1
 C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.csproj.CoreCompileInputs.cache
 C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.exe
 C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.pdb
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\obj\Debug\Ejercicio_1.PromedioEstudiante.resources
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\bin\Debug\dbo.Estudiantes.mdf
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322-ISNP954520_Unidad_3\Ejercicio_1\bin\Debug\dbo.Estudiantes_log.ldf
