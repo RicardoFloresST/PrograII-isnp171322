@@ -1,0 +1,11 @@
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\bin\Debug\Ejercicio_2.exe.config
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\bin\Debug\Ejercicio_2.exe
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\bin\Debug\Ejercicio_2.pdb
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.csproj.AssemblyReference.cache
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.Properties.Resources.resources
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.csproj.GenerateResource.cache
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.exe
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.pdb
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.ConversorLongForms.resources
+C:\Users\Ricardo.it\Documents\Repositorios Visual 2022\PrograII-isnp171322\ISNP171322_Unidad_2\Ejercicio_2\obj\Debug\Ejercicio_2.AboutBox1.resources

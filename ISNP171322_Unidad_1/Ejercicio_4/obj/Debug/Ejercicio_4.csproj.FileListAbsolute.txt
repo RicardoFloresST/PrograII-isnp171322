@@ -1,0 +1,7 @@
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\bin\Debug\Ejercicio_4.exe.config
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\bin\Debug\Ejercicio_4.exe
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\bin\Debug\Ejercicio_4.pdb
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\obj\Debug\Ejercicio_4.csproj.AssemblyReference.cache
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\obj\Debug\Ejercicio_4.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\obj\Debug\Ejercicio_4.exe
+C:\Users\Ricardo\Desktop\Repositorios UGB Prog II\PrograII-isnp171322\ISNP171322_Unidad_1\Ejercicio_4\obj\Debug\Ejercicio_4.pdb
