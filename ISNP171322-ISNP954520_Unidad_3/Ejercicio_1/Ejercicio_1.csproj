@@ -110,6 +110,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dbo.Estudiantes.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\cerrar.png" />
     <None Include="Resources\next1.png" />
     <None Include="Resources\1back.png" />
     <None Include="Resources\next.png" />

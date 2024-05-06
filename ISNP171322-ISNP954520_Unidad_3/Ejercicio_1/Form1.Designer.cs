@@ -37,7 +37,6 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.txtSexo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -82,14 +81,16 @@
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.txtBuscarEstudiante = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.botonCircular1 = new Ejercicio_1.BotonCircular();
             this.btnNext = new Ejercicio_1.BotonCircular();
             this.btnBack = new Ejercicio_1.BotonCircular();
             this.grbNavegacion.SuspendLayout();
             this.grbEditarControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.grbFichaEstudiante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbNavegacion
@@ -175,15 +176,6 @@
             this.label14.Size = new System.Drawing.Size(488, 42);
             this.label14.TabIndex = 70;
             this.label14.Text = "Registros De Estudiantes";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Ejercicio_1.Properties.Resources.Logotipo_horizontal_blanco1;
-            this.pictureBox1.Location = new System.Drawing.Point(939, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 79);
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
             // 
             // label13
             // 
@@ -307,10 +299,10 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox5.Location = new System.Drawing.Point(0, 3);
+            this.textBox5.Location = new System.Drawing.Point(0, 0);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 218);
+            this.textBox5.Size = new System.Drawing.Size(155, 221);
             this.textBox5.TabIndex = 74;
             // 
             // txtPorcent30_2
@@ -645,6 +637,33 @@
             this.txtBuscarEstudiante.TextChanged += new System.EventHandler(this.txtBuscarEstudiante_TextChanged);
             this.txtBuscarEstudiante.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarEstudiante_KeyUp);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ejercicio_1.Properties.Resources.Logotipo_horizontal_blanco1;
+            this.pictureBox1.Location = new System.Drawing.Point(939, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 79);
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
+            // botonCircular1
+            // 
+            this.botonCircular1.BackColor = System.Drawing.Color.Transparent;
+            this.botonCircular1.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.botonCircular1.FlatAppearance.BorderSize = 0;
+            this.botonCircular1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonCircular1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonCircular1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCircular1.ForeColor = System.Drawing.Color.Transparent;
+            this.botonCircular1.Image = global::Ejercicio_1.Properties.Resources.exit;
+            this.botonCircular1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.botonCircular1.Location = new System.Drawing.Point(1076, 480);
+            this.botonCircular1.Name = "botonCircular1";
+            this.botonCircular1.Size = new System.Drawing.Size(111, 57);
+            this.botonCircular1.TabIndex = 75;
+            this.botonCircular1.UseVisualStyleBackColor = false;
+            this.botonCircular1.Click += new System.EventHandler(this.botonCircular1_Click);
+            // 
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Transparent;
@@ -687,6 +706,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(1194, 834);
+            this.Controls.Add(this.botonCircular1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtBuscarEstudiante);
             this.Controls.Add(this.grdDatosEstudiantes);
@@ -704,12 +724,12 @@
             this.grbNavegacion.ResumeLayout(false);
             this.grbNavegacion.PerformLayout();
             this.grbEditarControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grbFichaEstudiante.ResumeLayout(false);
             this.grbFichaEstudiante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -772,6 +792,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtBuscarEstudiante;
+        private BotonCircular botonCircular1;
     }
 }
 

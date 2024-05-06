@@ -298,6 +298,19 @@ namespace Ejercicio_1
                 seleccionarEstudiante();
             }
         }
+
+        private void botonCircular1_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que quieres salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                MessageBox.Show("¡Hasta luego! Gracias por usar nuestra aplicación.", "Despedida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit(); // Cierra la aplicación
+            }
+            // Si el usuario selecciona "No", la aplicación continúa ejecutándose normalmente.
+        
+        }
     }
 }
 
