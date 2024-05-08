@@ -3,6 +3,8 @@ using System;
 public class mostrarNumero{
     public static void Main(string[] args) {
 
+         Console.WriteLine(" **++** Bienvenidos la aplicación de comprobación de números UGB **++** ");
+
         string respuesta;
         
         do {
