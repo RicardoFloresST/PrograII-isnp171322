@@ -1,13 +1,11 @@
-sing System;
+using System;
 
-public class Program
-{
-   public  static void Main(string[] args)
-    {
+public class mostrarNumero{
+    public static void Main(string[] args) {
+
         string respuesta;
-
-        do
-        {
+        
+        do {
             // Solicitamos al usuario que ingrese un número
             Console.Write("Ingrese un número: ");
             double numero = Convert.ToDouble(Console.ReadLine());
@@ -22,6 +20,7 @@ public class Program
                 Console.WriteLine("El número ingresado es negativo.");
             }
             else
+            
             {
                 Console.WriteLine("El número ingresado es cero.");
             }
@@ -37,3 +36,4 @@ public class Program
         Console.ReadLine();
     }
 }
+
