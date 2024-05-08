@@ -35,7 +35,7 @@ public class MostrarRaizCuadrada
             Console.Write("¿Quieres ingresar otro número? (si/no): ");
             respuesta = Console.ReadLine();
 
-        } while (respuesta.ToLower() == "s");
+        } while (respuesta.ToLower() == "si");
 
         // Esperamos a que el usuario presione Enter antes de cerrar la consola
         Console.WriteLine("Programa cerrado.");
