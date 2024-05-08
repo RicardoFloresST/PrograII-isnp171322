@@ -1,9 +1,12 @@
 using System;
 
-public class MostrarNumeros
+public class PromedioEdad
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("*** Bienvenidos a la aplicación Calculo Edad Promedio *** ");
+
+        Console.WriteLine();
         Console.WriteLine("Calcular la Edad Promedio");
         int suma = 0;
         int cantidadEdades = 15;
