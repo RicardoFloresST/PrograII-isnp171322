@@ -189,8 +189,6 @@ namespace Ejercicio_1
                             btnAgregar.Text = "Agregar";
                             btnEditar.Text = "Editar";
                         }
-
-                        // Resto del código que maneja los datos del estudiante...
                     }
                     else
                     {
@@ -215,10 +213,15 @@ namespace Ejercicio_1
             }
             else
             {// Verificar si los campos de notas están vacíos
-                if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(txtSexo.Text) || string.IsNullOrEmpty(txtLab1.Text) || string.IsNullOrEmpty(txtLab2.Text) || string.IsNullOrEmpty(txtParcial.Text) || string.IsNullOrEmpty(txtPromedio.Text))
-                {
-                    MessageBox.Show("Por favor, llene todos los campos y recuerde antes de guardar precionar el boton calcular promedio.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                if (btnEditar.Text == "Editar")
+
+                {// Mostrar los datos originales de la persona
+                    mostrarDatosEstudiantes();
+                    activarDesactivarControles(true);
+                    btnAgregar.Text = "Agregar";
+                    btnEditar.Text = "Editar";
+
+
                 } //Guardando un nuevo Estudiante
                 else
                 { //Cancelar 
